@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: auric-gold
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: GOLD_TICKER
+        value: GC=F
